@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="form">
+        <h1>Have an account?</h1>
+        <form action="" method="post" autocomplete="off">
+          <div>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="input-control"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password
+              "
+              id="password"
+              class="input-control password"
+              placeholder="password
+              "
+              minlength="4"
+              required
+            />
+          </div>
+          <button type="submit" name="signin" id="signin-button">
+            sign in
+          </button>
+          <div id="bottom-content">
+            <div>
+              <input
+                type="checkbox"
+                name="remember-me"
+                id="remember-me"
+                value="yes"
+              />
+              <label for="remember-me">Remember Me</label>
+            </div>
+            <a id="forgot-link" href="#">Forgot Password</a>
+          </div>
+          <p id="or-sign">— Or Sign In With —</p>
+          <div id="sign-app-link">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

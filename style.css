@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+::selection {
+  background-color: #facfb5;
+}
+input[type="checkbox"] + label::selection {
+  background-color: white;
+}
+#container {
+  width: 100%;
+  min-height: 100vh;
+  background: gray url("img/bg.webp") center/cover no-repeat;
+  box-shadow: 0 0 10px 900px rgba(0, 0, 0, 0.318) inset;
+  padding: 1px;
+}
+#form {
+  text-align: center;
+  margin: 11em auto;
+  padding: 0 1em;
+  /* border: 1px solid red; */
+  width: 330px;
+  min-height: 440px;
+}
+#form h1 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.password {
+  background: url("img/icons8-eye-50.png") right 1em center/6% no-repeat;
+}
+.input-control {
+  color: white;
+  background-color: rgba(204, 187, 187, 0.205);
+  width: 95%;
+  border: none;
+  border-radius: 30px;
+  height: 45px;
+  margin-bottom: 1em;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  transition: all 300ms;
+  padding-right: 3em;
+}
+.input-control::placeholder {
+  color: rgba(255, 255, 255, 0.664);
+}
+.input-control:focus,
+.input-control:hover {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.568);
+}
+
+#signin-button {
+  display: inline-block;
+  padding: 1.2em;
+  text-transform: uppercase;
+  width: 95%;
+  background-color: #facfb5;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 1em;
+}
+#signin-button:hover,
+a:hover,
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+input[type="checkbox"] + label {
+  color: #facfb5;
+  font-size: 0.9rem;
+  text-align: left;
+}
+input[type="checkbox"] {
+  opacity: 0.2;
+  accent-color: #facfb5;
+  vertical-align: text-bottom;
+  transform: scale(1.15);
+  margin-right: 0.7em;
+}
+input[type="checkbox"]:hover,
+input[type="checkbox"]:checked {
+  opacity: 1;
+  color: #facfb5;
+  outline: none;
+}
+#forgot-link:link,
+#forgot-link:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+#bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+#or-sign {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.856);
+  margin-top: 2em;
+}
+#sign-app-link {
+  display: flex;
+  justify-content: space-between;
+}
+#sign-app-link a:link,
+#sign-app-link a:visited {
+  color: black;
+  background-color: white;
+  font-size: 0.9rem;
+  width: 49%;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0.8em 0;
+  border: none;
+  transition: all 200ms;
+}
+#sign-app-link a:hover {
+  background-color: black;
+  color: white;
+}
+/* responsive */
+@media (max-width: 700px) {
+  #form {
+    width: 95%;
+  }
+  #bottom-content {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0.4em;
+  }
+  #bottom-content a {
+    display: inline-flex;
+    margin-top: 1em;
+    margin-left: 2em;
+  }
+}
